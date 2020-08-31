@@ -33,7 +33,7 @@ RUN chmod +x /sbin/pre-conf; sync \
 
 # to allow access from outside of the container  to the container service
 # at that ports need to allow access from firewall if need to access it outside of the server. 
-EXPOSE 7070 7443 7777 9090 9091 5000-6000/udp 5000-6000/tcp
+EXPOSE 7070/tcp 7443/tcp 7777/tcp 9090/tcp 9091/tcp 5222/tcp 5223/tcp 5229/tcp 5262/tcp 5263/tcp 5269/tcp 5270/tcp 5275/tcp 5276/tcp 4443/tcp 10000/udp 10001-11000/udp
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
